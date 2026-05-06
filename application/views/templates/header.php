@@ -18,37 +18,8 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Tailwind CSS (Local) -->
-    <script src="<?= base_url('assets/js/tailwind.min.js') ?>"></script>
-    
-    <!-- Tailwind Config for Custom Colors & Fonts -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#eff6ff',
-                            100: '#dbeafe',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            800: '#1e40af',
-                            900: '#0f172a', // Deep navy for text/backgrounds
-                        },
-                        accent: {
-                            500: '#f59e0b', // Amber/Gold for CTAs
-                            600: '#d97706',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Plus Jakarta Sans', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Tailwind CSS (Build) -->
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
 
     <style>
         /* Custom Styles for things Tailwind is too verbose for */

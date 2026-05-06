@@ -1,5 +1,128 @@
 <?php $this->load->view('templates/header'); ?>
 
+<!-- Admin Specific Skeleton Loader -->
+<style>
+    /* Hide global preloader in admin */
+    #page-preloader { display: none !important; }
+    
+    #admin-skeleton {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        background-color: #f8fafc;
+        display: flex;
+        transition: opacity 0.5s ease-out;
+    }
+</style>
+
+<div id="admin-skeleton">
+    <!-- Sidebar Skeleton -->
+    <div class="hidden lg:flex w-64 bg-white border-r border-gray-200 flex-col h-full shadow-xl">
+        <div class="p-6 border-b border-gray-50 flex items-center gap-3">
+            <div class="w-10 h-10 bg-gray-200 rounded-xl animate-pulse"></div>
+            <div class="flex-1 space-y-2">
+                <div class="h-4 bg-gray-200 rounded animate-pulse w-3/4"></div>
+                <div class="h-2 bg-gray-200 rounded animate-pulse w-1/2"></div>
+            </div>
+        </div>
+        <div class="p-6 space-y-4">
+            <div class="h-2 bg-gray-200 rounded animate-pulse w-1/4 mb-4"></div>
+            <div class="h-10 bg-gray-100 rounded-xl animate-pulse w-full"></div>
+            <div class="h-10 bg-gray-100 rounded-xl animate-pulse w-full"></div>
+            <div class="h-10 bg-gray-100 rounded-xl animate-pulse w-full"></div>
+            
+            <div class="h-2 bg-gray-200 rounded animate-pulse w-1/4 mt-8 mb-4"></div>
+            <div class="h-10 bg-gray-100 rounded-xl animate-pulse w-full"></div>
+        </div>
+    </div>
+    
+    <!-- Main Content Skeleton -->
+    <div class="flex-1 flex flex-col h-full overflow-hidden">
+        <!-- Topbar Skeleton -->
+        <div class="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-4 sm:px-8">
+            <div class="flex items-center gap-4">
+                <div class="h-8 w-8 bg-gray-200 rounded-lg animate-pulse lg:hidden"></div>
+                <div class="h-4 bg-gray-200 rounded animate-pulse w-32 hidden sm:block"></div>
+            </div>
+            <div class="flex gap-4 items-center">
+                <div class="h-8 w-20 bg-gray-200 rounded-lg animate-pulse hidden sm:block"></div>
+                <div class="h-4 w-4 bg-gray-200 rounded-full animate-pulse hidden md:block"></div>
+            </div>
+        </div>
+        
+        <!-- Content Area Skeleton -->
+        <div class="p-4 sm:p-8 flex-1 space-y-8">
+            <div class="max-w-7xl mx-auto space-y-8">
+                <!-- Header Title -->
+                <div class="flex justify-between items-center">
+                    <div class="space-y-2">
+                        <div class="h-8 bg-gray-200 rounded animate-pulse w-48"></div>
+                        <div class="h-3 bg-gray-200 rounded animate-pulse w-64"></div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="h-10 w-24 bg-gray-200 rounded-lg animate-pulse hidden sm:block"></div>
+                        <div class="h-10 w-32 bg-brand-100 rounded-lg animate-pulse"></div>
+                    </div>
+                </div>
+                <!-- Dynamic Main Content Placeholder -->
+                <?php $segment = $this->uri->segment(2); ?>
+                
+                <?php if(is_null($segment)): // Dashboard ?>
+                    <!-- Stats Cards Skeleton -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <?php for($i=0; $i<4; $i++): ?>
+                        <div class="h-[140px] bg-white rounded-2xl border border-gray-200 shadow-sm animate-pulse"></div>
+                        <?php endfor; ?>
+                    </div>
+                    <!-- Bottom Area Skeleton -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 h-[400px] bg-white rounded-2xl border border-gray-200 shadow-sm animate-pulse flex flex-col">
+                            <div class="h-20 border-b border-gray-100"></div>
+                        </div>
+                        <div class="h-[400px] bg-white rounded-2xl border border-gray-200 shadow-sm animate-pulse flex flex-col">
+                            <div class="h-16 border-b border-gray-100"></div>
+                            <div class="flex-1 p-4 space-y-4">
+                                <?php for($i=0; $i<4; $i++): ?>
+                                <div class="h-12 bg-gray-50 rounded-xl"></div>
+                                <?php endfor; ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php elseif($segment == 'ppdb'): // Kelola PPDB ?>
+                    <!-- Filters/Search Bar Skeleton -->
+                    <div class="h-16 bg-white rounded-2xl border border-gray-200 shadow-sm animate-pulse"></div>
+                    <!-- Table Skeleton -->
+                    <div class="h-[500px] bg-white rounded-2xl border border-gray-200 shadow-sm animate-pulse flex flex-col">
+                        <div class="h-12 bg-gray-50/50 border-b border-gray-100"></div>
+                        <div class="flex-1 p-6 space-y-6">
+                            <?php for($i=0; $i<6; $i++): ?>
+                            <div class="h-8 bg-gray-50 rounded"></div>
+                            <?php endfor; ?>
+                        </div>
+                    </div>
+                <?php else: // Beranda & others ?>
+                    <!-- Default Block Skeleton -->
+                    <div class="h-[500px] bg-white rounded-2xl border border-gray-200 shadow-sm animate-pulse"></div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('load', function() {
+        const adminSkeleton = document.getElementById('admin-skeleton');
+        if (adminSkeleton) {
+            setTimeout(() => {
+                adminSkeleton.style.opacity = '0';
+                setTimeout(() => {
+                    adminSkeleton.style.display = 'none';
+                }, 500);
+            }, 300);
+        }
+    });
+</script>
+
 <!-- Admin Dashboard Layout -->
 <div class="min-h-screen bg-gray-50 flex overflow-hidden">
     <!-- Sidebar (White Theme) -->
