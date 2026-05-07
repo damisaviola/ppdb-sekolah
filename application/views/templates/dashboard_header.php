@@ -1,5 +1,132 @@
 <?php $this->load->view('templates/header'); ?>
 
+<!-- Student Dashboard Skeleton Loader -->
+<style>
+    /* Hide global preloader in dashboard */
+    #page-preloader { display: none !important; }
+    
+    #student-skeleton {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        background-color: #f8fafc;
+        display: flex;
+        transition: opacity 0.5s ease-out;
+    }
+</style>
+
+<div id="student-skeleton">
+    <!-- Sidebar Skeleton -->
+    <div class="hidden lg:flex w-72 bg-white border-r border-slate-200 flex-col h-full shadow-sm">
+        <div class="p-6 border-b border-slate-50 flex items-center gap-3">
+            <div class="w-10 h-10 bg-slate-200 rounded-xl animate-pulse"></div>
+            <div class="flex-1 space-y-2">
+                <div class="h-4 bg-slate-200 rounded animate-pulse w-3/4"></div>
+                <div class="h-2 bg-slate-200 rounded animate-pulse w-1/2"></div>
+            </div>
+        </div>
+        <div class="p-4 space-y-4">
+            <div class="h-2 bg-slate-200 rounded animate-pulse w-1/4 mb-4"></div>
+            <div class="h-12 bg-slate-100 rounded-xl animate-pulse w-full"></div>
+            <div class="h-12 bg-slate-100 rounded-xl animate-pulse w-full"></div>
+            <div class="h-12 bg-slate-100 rounded-xl animate-pulse w-full"></div>
+            
+            <div class="h-2 bg-slate-200 rounded animate-pulse w-1/4 mt-8 mb-4"></div>
+            <div class="h-12 bg-slate-100 rounded-xl animate-pulse w-full"></div>
+            <div class="h-12 bg-slate-100 rounded-xl animate-pulse w-full"></div>
+        </div>
+    </div>
+    
+    <!-- Main Content Skeleton -->
+    <div class="flex-1 flex flex-col h-full overflow-hidden">
+        <!-- Topbar Skeleton -->
+        <div class="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-4 sm:px-8">
+            <div class="flex items-center gap-4">
+                <div class="h-8 w-8 bg-slate-200 rounded-lg animate-pulse lg:hidden"></div>
+                <div class="h-4 bg-slate-200 rounded animate-pulse w-32 hidden sm:block"></div>
+            </div>
+            <div class="flex gap-4 items-center">
+                <div class="h-8 w-8 bg-slate-200 rounded-xl animate-pulse"></div>
+                <div class="h-10 w-40 bg-slate-100 rounded-xl animate-pulse hidden sm:block"></div>
+            </div>
+        </div>
+        
+        <!-- Content Area Skeleton -->
+        <div class="p-4 sm:p-8 flex-1 space-y-6 overflow-y-auto">
+            <?php $segment = $this->uri->segment(3); ?>
+            
+            <?php if(is_null($segment) || $segment == 'dashboard'): ?>
+                <!-- Dashboard Welcome & Status Skeleton -->
+                <div class="space-y-2 mb-8">
+                    <div class="h-8 bg-slate-200 rounded animate-pulse w-64"></div>
+                    <div class="h-4 bg-slate-200 rounded animate-pulse w-96"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                    <?php for($i=0; $i<4; $i++): ?>
+                    <div class="h-[120px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse p-6 flex flex-col justify-between">
+                        <div class="flex justify-between">
+                            <div class="w-12 h-12 bg-slate-100 rounded-2xl"></div>
+                            <div class="w-16 h-6 bg-slate-100 rounded-full"></div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="h-3 bg-slate-100 rounded w-1/2"></div>
+                            <div class="h-5 bg-slate-200 rounded w-3/4"></div>
+                        </div>
+                    </div>
+                    <?php endfor; ?>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 h-[400px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
+                    <div class="space-y-6">
+                        <div class="h-[150px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
+                        <div class="h-[150px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
+                    </div>
+                </div>
+            <?php elseif($segment == 'biodata'): ?>
+                <div class="flex justify-between items-center mb-6">
+                    <div class="space-y-2">
+                        <div class="h-8 bg-slate-200 rounded animate-pulse w-48"></div>
+                        <div class="h-4 bg-slate-200 rounded animate-pulse w-64"></div>
+                    </div>
+                    <div class="h-10 w-32 bg-slate-200 rounded-xl animate-pulse"></div>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-8">
+                    <div class="w-full lg:w-1/3 xl:w-1/4 h-[400px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
+                    <div class="flex-1 h-[600px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
+                </div>
+            <?php elseif($segment == 'berkas'): ?>
+                <div class="space-y-2 mb-6">
+                    <div class="h-8 bg-slate-200 rounded animate-pulse w-48"></div>
+                    <div class="h-4 bg-slate-200 rounded animate-pulse w-96"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <?php for($i=0; $i<5; $i++): ?>
+                    <div class="h-[280px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
+                    <?php endfor; ?>
+                </div>
+            <?php else: ?>
+                <div class="h-[500px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.addEventListener('load', function() {
+        const studentSkeleton = document.getElementById('student-skeleton');
+        if (studentSkeleton) {
+            setTimeout(() => {
+                studentSkeleton.style.opacity = '0';
+                setTimeout(() => {
+                    studentSkeleton.style.display = 'none';
+                }, 500);
+            }, 300);
+        }
+    });
+</script>
+
     <!-- Sidebar Backdrop (Mobile) -->
     <div id="sidebar-backdrop" class="fixed inset-0 bg-slate-900/60 z-[48] hidden lg:hidden transition-opacity duration-300 opacity-0"></div>
 

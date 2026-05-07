@@ -21,6 +21,7 @@
                 <a href="#persyaratan" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Persyaratan</a>
                 <a href="#jadwal" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Jadwal</a>
                 <a href="#faq" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">FAQ</a>
+                <a href="<?= base_url('ppdb/pengumuman') ?>" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Pengumuman</a>
                 
                 <div class="ml-4 pl-4 border-l border-white/20 flex items-center gap-4">
                     <a href="<?= base_url('ppdb/login') ?>" id="nav-login-link" class="text-white hover:text-accent-400 font-bold transition-colors">Login</a>
@@ -63,6 +64,10 @@
             <a href="#faq" class="mobile-link p-3 rounded-lg text-gray-700 font-medium hover:bg-brand-50 hover:text-brand-600 flex items-center gap-3">
                 <div class="w-6 flex items-center justify-center"><i class="fa-solid fa-circle-question"></i></div> 
                 FAQ
+            </a>
+            <a href="<?= base_url('ppdb/pengumuman') ?>" class="mobile-link p-3 rounded-lg text-gray-700 font-medium hover:bg-brand-50 hover:text-brand-600 flex items-center gap-3">
+                <div class="w-6 flex items-center justify-center"><i class="fa-solid fa-bullhorn"></i></div> 
+                Pengumuman
             </a>
             <div class="mt-2 pt-4 border-t border-gray-100 space-y-3">
                 <a href="<?= base_url('ppdb/login') ?>" class="block w-full text-center py-3 border-2 border-brand-600 text-brand-600 font-bold rounded-lg hover:bg-brand-50 transition-colors">

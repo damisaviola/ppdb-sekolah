@@ -38,4 +38,10 @@ class Ppdb extends CI_Controller {
         $data['title'] = 'Unggah Berkas - PPDB SMA YPPK Tiga Raja';
         $this->load->view('dashboard/berkas', $data);
     }
+
+    public function pengumuman()
+    {
+        $data['title'] = 'Pengumuman PPDB - SMA YPPK Tiga Raja';
+        $this->load->view('ppdb/pengumuman', $data);
+    }
 }

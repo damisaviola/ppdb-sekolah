@@ -10,10 +10,10 @@
     <meta name="keywords" content="sekolah, sma, yppk, tiga raja, timika, papua, pendidikan, pendaftaran siswa baru">
     <meta name="author" content="SMA YPPK Tiga Raja Timika">
     
-    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -29,15 +29,15 @@
             margin: 0;
             padding: 0;
             position: relative;
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         .font-heading {
-            font-family: 'Plus Jakarta Sans', sans-serif !important;
+            font-family: 'Poppins', sans-serif !important;
         }
 
         .font-sans {
-            font-family: 'Inter', sans-serif !important;
+            font-family: 'Poppins', sans-serif !important;
         }
 
         .glass-nav {

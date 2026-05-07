@@ -58,6 +58,7 @@ $route['ppdb/register'] = 'ppdb/register';
 $route['ppdb/calon-siswa/dashboard'] = 'ppdb/dashboard';
 $route['ppdb/calon-siswa/biodata'] = 'ppdb/biodata';
 $route['ppdb/calon-siswa/berkas'] = 'ppdb/berkas';
+$route['ppdb/pengumuman'] = 'ppdb/pengumuman';
 
 $route['404_override'] = 'errors/not_found';
 $route['translate_uri_dashes'] = FALSE;

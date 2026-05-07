@@ -42,66 +42,6 @@
     
 </section>
 
-<!-- TENTANG SEKOLAH -->
-<section id="profil" class="py-20 lg:py-32 bg-gray-50">
-    <div class="container mx-auto px-4 md:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row gap-16 items-center">
-            
-            <!-- Left Text -->
-            <div class="lg:w-1/2 reveal">
-                <div class="inline-flex items-center gap-2 text-brand-600 font-bold mb-4 tracking-wider uppercase text-sm">
-                    <span class="w-8 h-1 bg-brand-600 rounded-full"></span> Tentang Sekolah
-                </div>
-                <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-900 mb-6">
-                    Mencetak Pemimpin Masa Depan Sejak 1990
-                </h2>
-                <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                    SMA Negeri 1 Nusantara adalah lembaga pendidikan menengah atas yang berdedikasi untuk mengembangkan potensi maksimal setiap siswa melalui pendekatan holistik yang menyeimbangkan kecerdasan intelektual, emosional, dan spiritual.
-                </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 bg-blue-50 text-brand-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                            <i class="fa-solid fa-eye"></i>
-                        </div>
-                        <h3 class="font-heading font-bold text-xl text-brand-900 mb-2">Visi</h3>
-                        <p class="text-gray-600 text-sm">Menjadi sekolah rujukan nasional yang unggul dalam prestasi, berkarakter, dan berwawasan lingkungan global.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 bg-amber-50 text-accent-500 rounded-xl flex items-center justify-center text-xl mb-4">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <h3 class="font-heading font-bold text-xl text-brand-900 mb-2">Misi</h3>
-                        <p class="text-gray-600 text-sm">Menyelenggarakan pendidikan yang bermutu, inovatif, dan berakar pada nilai-nilai budaya bangsa.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Right Images -->
-            <div class="lg:w-1/2 reveal">
-                <div class="relative">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-brand-100 to-blue-50 rounded-[2rem] transform rotate-3 -z-10"></div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop" alt="Kegiatan Belajar" class="rounded-2xl w-full h-64 object-cover shadow-lg transform translate-y-8" />
-                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2132&auto=format&fit=crop" alt="Gedung Sekolah" class="rounded-2xl w-full h-64 object-cover shadow-lg" />
-                    </div>
-                    
-                    <!-- Stats badge -->
-                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex items-center gap-4">
-                        <div class="w-14 h-14 bg-brand-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
-                            <i class="fa-solid fa-medal"></i>
-                        </div>
-                        <div>
-                            <p class="text-3xl font-heading font-black text-brand-900">Akreditasi A</p>
-                            <p class="text-gray-500 font-medium">Badan Akreditasi Nasional</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
 
 <!-- PROGRAM JURUSAN -->
 <section id="program" class="py-20 lg:py-32 bg-white">
@@ -282,6 +222,87 @@
                 </div>
                 <h3 class="font-heading font-bold text-brand-900 text-lg">Paduan Suara</h3>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- TENAGA PENDIDIK (GURU) -->
+<section id="guru" class="py-20 lg:py-32 bg-white">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+            <div class="inline-flex items-center justify-center gap-2 text-brand-600 font-bold mb-4 tracking-wider uppercase text-sm">
+                <span class="w-8 h-1 bg-brand-600 rounded-full"></span> Tim Pengajar <span class="w-8 h-1 bg-brand-600 rounded-full"></span>
+            </div>
+            <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-900 mb-6">Guru & Staff Terbaik</h2>
+            <p class="text-gray-600 text-lg">Didukung oleh tenaga pendidik yang kompeten, berdedikasi, dan ahli di bidangnya masing-masing untuk membimbing setiap siswa.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Guru 1 -->
+            <div class="group bg-white rounded-[2.5rem] p-8 text-center shadow-sm border border-brand-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal">
+                <div class="relative w-40 h-40 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-brand-100 rounded-full rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="Kepala Sekolah" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-md">
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-900 mb-1">Drs. H. Ahmad Fauzi</h3>
+                <p class="text-brand-600 font-medium text-xs mb-6 uppercase tracking-widest">Kepala Sekolah</p>
+                <div class="flex justify-center gap-3 text-gray-400">
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-instagram text-sm"></i></a>
+                </div>
+            </div>
+
+            <!-- Guru 2 -->
+            <div class="group bg-white rounded-[2.5rem] p-8 text-center shadow-sm border border-brand-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal delay-100">
+                <div class="relative w-40 h-40 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-accent-100 rounded-full rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1544717297-fa95b3ee51f3?q=80&w=2070&auto=format&fit=crop" alt="Guru MIPA" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-md">
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-900 mb-1">Siti Aminah, M.Pd</h3>
+                <p class="text-brand-600 font-medium text-xs mb-6 uppercase tracking-widest">Guru Matematika</p>
+                <div class="flex justify-center gap-3 text-gray-400">
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-instagram text-sm"></i></a>
+                </div>
+            </div>
+
+            <!-- Guru 3 -->
+            <div class="group bg-white rounded-[2.5rem] p-8 text-center shadow-sm border border-brand-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal delay-200">
+                <div class="relative w-40 h-40 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-brand-100 rounded-full rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="Guru IPS" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-md">
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-900 mb-1">Budi Setiawan, S.Si</h3>
+                <p class="text-brand-600 font-medium text-xs mb-6 uppercase tracking-widest">Guru Fisika</p>
+                <div class="flex justify-center gap-3 text-gray-400">
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-instagram text-sm"></i></a>
+                </div>
+            </div>
+
+            <!-- Guru 4 -->
+            <div class="group bg-white rounded-[2.5rem] p-8 text-center shadow-sm border border-brand-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 reveal delay-300">
+                <div class="relative w-40 h-40 mx-auto mb-6">
+                    <div class="absolute inset-0 bg-accent-100 rounded-full rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
+                    <img src="https://images.unsplash.com/photo-1580894732230-285b96399e62?q=80&w=2070&auto=format&fit=crop" alt="Guru Bahasa" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-md">
+                </div>
+                <h3 class="font-heading font-bold text-xl text-brand-900 mb-1">Rina Wijaya, S.Pd</h3>
+                <p class="text-brand-600 font-medium text-xs mb-6 uppercase tracking-widest">Guru Bhs. Inggris</p>
+                <div class="flex justify-center gap-3 text-gray-400">
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-gray-50 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all duration-300"><i class="fa-brands fa-instagram text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-16 text-center">
+            <a href="#" class="inline-flex items-center gap-2 px-8 py-3.5 bg-gray-900 text-white font-bold rounded-2xl hover:bg-brand-600 transition-all shadow-xl hover:shadow-brand-600/30">
+                Lihat Seluruh Staff & Guru <i class="fa-solid fa-users text-sm"></i>
+            </a>
         </div>
     </div>
 </section>
