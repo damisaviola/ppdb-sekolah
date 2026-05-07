@@ -57,7 +57,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Program 1 -->
             <div class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 reveal">
-                <div class="w-16 h-16 bg-blue-50 group-hover:bg-brand-600 text-brand-600 group-hover:text-white rounded-2xl flex items-center justify-center text-3xl mb-6 transition-colors">
+                <div class="w-16 h-16 bg-blue-50 group-hover:bg-brand-600 text-brand-600 group-hover:text-white rounded-full flex items-center justify-center text-3xl mb-6 transition-colors">
                     <i class="fa-solid fa-flask"></i>
                 </div>
                 <h3 class="font-heading font-bold text-2xl text-brand-900 mb-3 group-hover:text-brand-600 transition-colors">MIPA</h3>
@@ -67,7 +67,7 @@
 
             <!-- Program 2 -->
             <div class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 reveal delay-100">
-                <div class="w-16 h-16 bg-green-50 group-hover:bg-green-600 text-green-600 group-hover:text-white rounded-2xl flex items-center justify-center text-3xl mb-6 transition-colors">
+                <div class="w-16 h-16 bg-green-50 group-hover:bg-green-600 text-green-600 group-hover:text-white rounded-full flex items-center justify-center text-3xl mb-6 transition-colors">
                     <i class="fa-solid fa-globe"></i>
                 </div>
                 <h3 class="font-heading font-bold text-2xl text-brand-900 mb-3 group-hover:text-green-600 transition-colors">IPS</h3>
@@ -77,7 +77,7 @@
 
             <!-- Program 3 -->
             <div class="group bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 reveal delay-200">
-                <div class="w-16 h-16 bg-orange-50 group-hover:bg-orange-500 text-orange-500 group-hover:text-white rounded-2xl flex items-center justify-center text-3xl mb-6 transition-colors">
+                <div class="w-16 h-16 bg-orange-50 group-hover:bg-orange-500 text-orange-500 group-hover:text-white rounded-full flex items-center justify-center text-3xl mb-6 transition-colors">
                     <i class="fa-solid fa-language"></i>
                 </div>
                 <h3 class="font-heading font-bold text-2xl text-brand-900 mb-3 group-hover:text-orange-500 transition-colors">BAHASA</h3>
@@ -417,7 +417,7 @@
             <div class="lg:w-2/3 space-y-6">
                 <!-- Agenda 1 -->
                 <div class="group bg-white p-6 md:p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-100 transition-all duration-500 flex flex-col md:flex-row items-center gap-8 reveal">
-                    <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-brand-900 rounded-[1.5rem] flex flex-col items-center justify-center text-white group-hover:bg-accent-500 transition-colors duration-500 shadow-lg shadow-brand-900/20">
+                    <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-brand-900 rounded-full flex flex-col items-center justify-center text-white group-hover:bg-accent-500 transition-colors duration-500 shadow-lg shadow-brand-900/20">
                         <span class="text-3xl md:text-4xl font-bold">15</span>
                         <span class="text-xs md:text-sm font-bold uppercase tracking-widest opacity-80">Mei 2026</span>
                     </div>
@@ -438,7 +438,7 @@
 
                 <!-- Agenda 2 -->
                 <div class="group bg-white p-6 md:p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-100 transition-all duration-500 flex flex-col md:flex-row items-center gap-8 reveal delay-100">
-                    <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-brand-900 rounded-[1.5rem] flex flex-col items-center justify-center text-white group-hover:bg-accent-500 transition-colors duration-500 shadow-lg shadow-brand-900/20">
+                    <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-brand-900 rounded-full flex flex-col items-center justify-center text-white group-hover:bg-accent-500 transition-colors duration-500 shadow-lg shadow-brand-900/20">
                         <span class="text-3xl md:text-4xl font-bold">22</span>
                         <span class="text-xs md:text-sm font-bold uppercase tracking-widest opacity-80">Mei 2026</span>
                     </div>
@@ -459,7 +459,7 @@
 
                 <!-- Agenda 3 -->
                 <div class="group bg-white p-6 md:p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-100 transition-all duration-500 flex flex-col md:flex-row items-center gap-8 reveal delay-200">
-                    <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-brand-900 rounded-[1.5rem] flex flex-col items-center justify-center text-white group-hover:bg-accent-500 transition-colors duration-500 shadow-lg shadow-brand-900/20">
+                    <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-brand-900 rounded-full flex flex-col items-center justify-center text-white group-hover:bg-accent-500 transition-colors duration-500 shadow-lg shadow-brand-900/20">
                         <span class="text-3xl md:text-4xl font-bold">01</span>
                         <span class="text-xs md:text-sm font-bold uppercase tracking-widest opacity-80">Jun 2026</span>
                     </div>

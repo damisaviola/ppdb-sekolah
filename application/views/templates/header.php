@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?= isset($title) ? $title : 'SMA YPPK Tiga Raja Timika - Cerdas & Berkarakter' ?></title>
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="<?= base_url('assets/logo-sma.jpg') ?>">
+    
     <!-- SEO Meta Tags -->
     <meta name="description" content="Website Resmi SMA YPPK Tiga Raja Timika. Mewujudkan generasi berprestasi, berkarakter unggul, dan siap menghadapi tantangan global di Tanah Papua.">
     <meta name="keywords" content="sekolah, sma, yppk, tiga raja, timika, papua, pendidikan, pendaftaran siswa baru">
