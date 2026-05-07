@@ -27,4 +27,10 @@ class Home extends CI_Controller {
         $this->load->view('beranda/sejarah', $data);
     }
 
+    public function prestasi()
+    {
+        $data['title'] = 'Prestasi - SMA YPPK Tiga Raja Timika';
+        $this->load->view('beranda/prestasi', $data);
+    }
+
 }

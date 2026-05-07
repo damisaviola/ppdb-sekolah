@@ -307,72 +307,6 @@
     </div>
 </section>
 
-<!-- PRESTASI -->
-<section id="prestasi" class="py-20 lg:py-32 bg-white overflow-hidden">
-    <div class="container mx-auto px-4 md:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
-            <div class="max-w-2xl">
-                <div class="inline-flex items-center gap-2 text-brand-600 font-bold mb-4 tracking-wider uppercase text-sm">
-                    <span class="w-8 h-1 bg-brand-600 rounded-full"></span> Galeri Prestasi
-                </div>
-                <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-900 mb-6">Pencapaian Siswa Kami</h2>
-                <p class="text-gray-600 text-lg">Bukti nyata dedikasi dan kerja keras seluruh civitas akademika dalam meraih keunggulan di berbagai bidang.</p>
-            </div>
-            <div class="mt-8 md:mt-0">
-                <a href="#" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-900 text-white font-bold rounded-xl hover:bg-brand-800 transition-all shadow-lg">
-                    Lihat Semua Prestasi <i class="fa-solid fa-arrow-right text-sm"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Prestasi 1 -->
-            <div class="group relative bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 reveal">
-                <div class="relative h-72 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=1974&auto=format&fit=crop" alt="Juara Robotik" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute top-4 left-4 bg-accent-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg">
-                        NASIONAL
-                    </div>
-                </div>
-                <div class="p-8">
-                    <div class="text-brand-600 font-bold text-sm mb-2">AGUSTUS 2025</div>
-                    <h3 class="font-heading font-bold text-2xl text-brand-900 mb-3 group-hover:text-brand-600 transition-colors">Juara 1 Lomba Robotik Nasional</h3>
-                    <p class="text-gray-600 leading-relaxed">Tim Robotik sekolah berhasil meraih peringkat pertama dalam kompetisi teknologi tahunan yang diselenggarakan di Jakarta.</p>
-                </div>
-            </div>
-
-            <!-- Prestasi 2 -->
-            <div class="group relative bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 reveal delay-100">
-                <div class="relative h-72 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop" alt="Lomba Debat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute top-4 left-4 bg-brand-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg">
-                        PROVINSI
-                    </div>
-                </div>
-                <div class="p-8">
-                    <div class="text-brand-600 font-bold text-sm mb-2">MEI 2025</div>
-                    <h3 class="font-heading font-bold text-2xl text-brand-900 mb-3 group-hover:text-brand-600 transition-colors">Juara Umum Debat Bahasa Inggris</h3>
-                    <p class="text-gray-600 leading-relaxed">Kemenangan gemilang diraih oleh tim debat kami pada kompetisi tingkat provinsi se-Jawa Barat tahun ini.</p>
-                </div>
-            </div>
-
-            <!-- Prestasi 3 -->
-            <div class="group relative bg-white rounded-[2rem] overflow-hidden shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 reveal delay-200">
-                <div class="relative h-72 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2132&auto=format&fit=crop" alt="Olimpiade Sains" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute top-4 left-4 bg-accent-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-lg">
-                        NASIONAL
-                    </div>
-                </div>
-                <div class="p-8">
-                    <div class="text-brand-600 font-bold text-sm mb-2">MARET 2025</div>
-                    <h3 class="font-heading font-bold text-2xl text-brand-900 mb-3 group-hover:text-brand-600 transition-colors">Medali Emas Olimpiade Sains (OSN)</h3>
-                    <p class="text-gray-600 leading-relaxed">Siswa kami berhasil mengharumkan nama sekolah dengan meraih medali emas pada bidang Astronomi di OSN Nasional.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- BERITA & ARTIKEL -->
 <section id="berita" class="py-20 lg:py-32 bg-gray-50">
@@ -459,6 +393,91 @@
             <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 bg-white text-gray-700 font-medium rounded-xl hover:bg-gray-50 transition-colors">
                 Lihat Semua Berita
             </a>
+        </div>
+    </div>
+</section>
+
+<!-- AGENDA SEKOLAH -->
+<section id="agenda" class="py-20 lg:py-32 bg-white">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row gap-16">
+            <!-- Left Side: Header -->
+            <div class="lg:w-1/3 reveal">
+                <div class="inline-flex items-center gap-2 text-brand-600 font-bold mb-4 tracking-wider uppercase text-sm">
+                    <span class="w-8 h-1 bg-brand-600 rounded-full"></span> Agenda Sekolah
+                </div>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-brand-900 mb-6 leading-tight">Kegiatan Mendatang</h2>
+                <p class="text-gray-600 text-lg mb-10">Jangan lewatkan berbagai kegiatan penting, akademik maupun non-akademik, yang akan dilaksanakan di lingkungan sekolah.</p>
+                <a href="#" class="inline-flex items-center gap-2 px-8 py-4 bg-brand-50 text-brand-600 font-bold rounded-2xl hover:bg-brand-600 hover:text-white transition-all shadow-sm">
+                    Lihat Kalender Akademik <i class="fa-solid fa-calendar-days"></i>
+                </a>
+            </div>
+
+            <!-- Right Side: Agenda List -->
+            <div class="lg:w-2/3 space-y-6">
+                <!-- Agenda 1 -->
+                <div class="group bg-white p-6 md:p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-100 transition-all duration-500 flex flex-col md:flex-row items-center gap-8 reveal">
+                    <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-brand-900 rounded-[1.5rem] flex flex-col items-center justify-center text-white group-hover:bg-accent-500 transition-colors duration-500 shadow-lg shadow-brand-900/20">
+                        <span class="text-3xl md:text-4xl font-bold">15</span>
+                        <span class="text-xs md:text-sm font-bold uppercase tracking-widest opacity-80">Mei 2026</span>
+                    </div>
+                    <div class="flex-grow text-center md:text-left">
+                        <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-3">
+                            <span class="text-xs font-bold px-3 py-1 bg-brand-50 text-brand-600 rounded-full uppercase">Akademik</span>
+                            <span class="text-xs font-medium text-gray-400"><i class="fa-solid fa-clock mr-1"></i> 08:00 - Selesai</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl md:text-2xl text-brand-900 mb-2 group-hover:text-brand-600 transition-colors">Ujian Akhir Semester Genap</h3>
+                        <p class="text-gray-500 text-sm md:text-base">Pelaksanaan evaluasi akhir tahun untuk seluruh jenjang kelas X, XI, dan XII secara serentak.</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="#" class="w-12 h-12 rounded-full border border-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-brand-600 group-hover:text-white group-hover:border-brand-600 transition-all">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Agenda 2 -->
+                <div class="group bg-white p-6 md:p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-100 transition-all duration-500 flex flex-col md:flex-row items-center gap-8 reveal delay-100">
+                    <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-brand-900 rounded-[1.5rem] flex flex-col items-center justify-center text-white group-hover:bg-accent-500 transition-colors duration-500 shadow-lg shadow-brand-900/20">
+                        <span class="text-3xl md:text-4xl font-bold">22</span>
+                        <span class="text-xs md:text-sm font-bold uppercase tracking-widest opacity-80">Mei 2026</span>
+                    </div>
+                    <div class="flex-grow text-center md:text-left">
+                        <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-3">
+                            <span class="text-xs font-bold px-3 py-1 bg-amber-50 text-amber-600 rounded-full uppercase">Event</span>
+                            <span class="text-xs font-medium text-gray-400"><i class="fa-solid fa-clock mr-1"></i> 09:00 - 15:00</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl md:text-2xl text-brand-900 mb-2 group-hover:text-brand-600 transition-colors">Pentas Seni & Budaya Papua</h3>
+                        <p class="text-gray-500 text-sm md:text-base">Ajang unjuk bakat dan kreativitas siswa dalam melestarikan warisan budaya lokal melalui tarian dan musik.</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="#" class="w-12 h-12 rounded-full border border-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-brand-600 group-hover:text-white group-hover:border-brand-600 transition-all">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Agenda 3 -->
+                <div class="group bg-white p-6 md:p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-100 transition-all duration-500 flex flex-col md:flex-row items-center gap-8 reveal delay-200">
+                    <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-brand-900 rounded-[1.5rem] flex flex-col items-center justify-center text-white group-hover:bg-accent-500 transition-colors duration-500 shadow-lg shadow-brand-900/20">
+                        <span class="text-3xl md:text-4xl font-bold">01</span>
+                        <span class="text-xs md:text-sm font-bold uppercase tracking-widest opacity-80">Jun 2026</span>
+                    </div>
+                    <div class="flex-grow text-center md:text-left">
+                        <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-3">
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full uppercase">Umum</span>
+                            <span class="text-xs font-medium text-gray-400"><i class="fa-solid fa-location-dot mr-1"></i> Aula Utama</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl md:text-2xl text-brand-900 mb-2 group-hover:text-brand-600 transition-colors">Rapat Pleno Orang Tua Siswa</h3>
+                        <p class="text-gray-500 text-sm md:text-base">Pertemuan rutin komite sekolah dan orang tua murid untuk membahas laporan hasil belajar semester.</p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="#" class="w-12 h-12 rounded-full border border-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-brand-600 group-hover:text-white group-hover:border-brand-600 transition-all">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

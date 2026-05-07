@@ -68,7 +68,7 @@
 
                 <a href="<?= base_url() ?>#program" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Program</a>
                 <a href="<?= base_url() ?>#guru" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Guru</a>
-                <a href="<?= base_url() ?>#prestasi" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Prestasi</a>
+                <a href="<?= base_url('home/prestasi') ?>" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Prestasi</a>
                 <a href="<?= base_url() ?>#berita" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Berita</a>
                 <a href="<?= base_url() ?>#galeri" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Galeri</a>
                 <a href="<?= base_url() ?>#kontak" class="nav-link px-4 py-2 text-white font-medium hover:text-brand-100 transition-colors rounded-lg hover:bg-white/10">Kontak</a>
@@ -132,7 +132,7 @@
                 <div class="w-6 flex items-center justify-center"><i class="fa-solid fa-user-tie"></i></div> 
                 Guru
             </a>
-            <a href="<?= base_url() ?>#prestasi" class="mobile-link p-3 rounded-lg text-gray-700 font-medium hover:bg-brand-50 hover:text-brand-600 flex items-center gap-3">
+            <a href="<?= base_url('home/prestasi') ?>" class="mobile-link p-3 rounded-lg text-gray-700 font-medium hover:bg-brand-50 hover:text-brand-600 flex items-center gap-3">
                 <div class="w-6 flex items-center justify-center"><i class="fa-solid fa-trophy"></i></div> 
                 Prestasi
             </a>
