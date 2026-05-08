@@ -106,6 +106,12 @@
                     <div class="h-[280px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
                     <?php endfor; ?>
                 </div>
+            <?php elseif($segment == 'ujian'): ?>
+                <div class="space-y-2 mb-6">
+                    <div class="h-8 bg-slate-200 rounded animate-pulse w-48"></div>
+                    <div class="h-4 bg-slate-200 rounded animate-pulse w-96"></div>
+                </div>
+                <div class="h-[400px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
             <?php else: ?>
                 <div class="h-[500px] bg-white rounded-3xl border border-slate-200 shadow-sm animate-pulse"></div>
             <?php endif; ?>
@@ -140,8 +146,8 @@
                         <i class="fa-solid fa-graduation-cap text-xl"></i>
                     </div>
                     <div>
-                        <h2 class="font-bold text-slate-900 leading-tight">PPDB Portal</h2>
-                        <p class="text-[10px] text-slate-500 font-medium uppercase tracking-wider">SMA YPPK Tiga Raja</p>
+                        <h2 class="font-bold text-slate-900 leading-tight">SPMB Portal</h2>
+                        <p class="text-[10px] text-slate-500 font-medium uppercase tracking-wider"></p>
                     </div>
                 </div>
             </div>
@@ -169,6 +175,13 @@
                         <i class="fa-solid fa-file-arrow-up text-lg <?= ($this->uri->segment(3) == 'berkas') ? '' : 'text-slate-400 group-hover:text-slate-600' ?>"></i>
                     </div>
                     <span>Unggah Berkas</span>
+                </a>
+
+                <a href="<?= base_url('ppdb/calon-siswa/ujian') ?>" class="flex items-center gap-3 px-4 py-3 <?= ($this->uri->segment(3) == 'ujian') ? 'bg-brand-50 text-brand-600 font-semibold' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900 font-medium group' ?> rounded-xl transition-all">
+                    <div class="w-6 flex items-center justify-center">
+                        <i class="fa-solid fa-file-signature text-lg <?= ($this->uri->segment(3) == 'ujian') ? '' : 'text-slate-400 group-hover:text-slate-600' ?>"></i>
+                    </div>
+                    <span>Ujian Online</span>
                 </a>
 
                 <a href="#" class="flex items-center gap-3 px-4 py-3 text-slate-600 hover:bg-slate-50 hover:text-slate-900 rounded-xl font-medium transition-all group">
