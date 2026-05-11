@@ -2,7 +2,6 @@
 
 <!-- Student Dashboard Skeleton Loader -->
 <style>
-    /* Hide global preloader in dashboard */
     #page-preloader { display: none !important; }
     
     #student-skeleton {
